@@ -54,6 +54,8 @@ public class ReqresTest {
         Assertions.assertNotNull(createdUser.getCreatedAt());
         Assertions.assertEquals("John Doe", createdUser.getName());
         Assertions.assertEquals("Software Engineer", createdUser.getJob());
+        Assertions.assertNotNull(createdUserId, "Created user ID should not be null");
+        System.out.println("createdUserId: " + createdUserId );
     }
 
     /**
